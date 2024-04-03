@@ -21,9 +21,11 @@ def test_fix_phone_num():
   
 def test_fix_phone_num_parentheses():
   assert fix_phone_num('555-442-9876') == '(555) 442 9876'
+  
 def test_parentheses_phone_num_parentheses():
   assert fix_phone_num('(321) 654 3333') == '(321) 654 3333'
-  
+
+def test_num_value_error():
   # Now check that a too short string gives a ValueError
   with pytest.raises(ValueError):
     fix_phone_num("51")
