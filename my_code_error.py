@@ -31,4 +31,4 @@ def test_num_value_error():
     fix_phone_num("51")
 
 def test_phone_num_false():
-  assert false
+  assert fix_phone_num('1 (321) 652 3333') == '(321) 652 3333'
