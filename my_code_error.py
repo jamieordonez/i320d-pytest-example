@@ -29,3 +29,6 @@ def test_num_value_error():
   # Now check that a too short string gives a ValueError
   with pytest.raises(ValueError):
     fix_phone_num("51")
+
+def test_phone_num_false():
+  assert false
